@@ -249,6 +249,11 @@ class Flushbar<T extends Object> extends StatefulWidget {
     return _flushbarRoute?.currentStatus == FlushbarStatus.SHOWING;
   }
 
+  /// Checks if the flushbar is appearing
+  bool isAppearing() {
+    return _flushbarRoute?.currentStatus == FlushbarStatus.IS_APPEARING;
+  }
+
   /// Checks if the flushbar is dismissed
   bool isDismissed() {
     return _flushbarRoute?.currentStatus == FlushbarStatus.DISMISSED;
